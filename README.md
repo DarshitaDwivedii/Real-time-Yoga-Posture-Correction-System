@@ -1,6 +1,6 @@
 # Real-Time AI Yoga Pose Correction System
 
-![Yoga Coach Demo](Videos/Demo/Screen Recording 2025-07-23 121206.mp4)
+![Yoga Coach Demo](Videos/Demo/Demo_video.mp4)
 
 ---
 
