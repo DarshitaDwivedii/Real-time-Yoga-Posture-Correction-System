@@ -1,6 +1,6 @@
 # Real-Time AI Yoga Pose Correction System
 
-![Yoga Coach Demo](https-placeholder-for-your-gif-or-video-link.gif)
+![Yoga Coach Demo](Videos\Demo\Screen Recording 2025-07-23 121206.mp4)
 *(Space for Video Demo - Replace the above line with a GIF or a link to a video of your project in action.)*
 
 ---
@@ -27,6 +27,8 @@ The project is architected into two distinct pipelines: an **Offline Training Pi
 ### 1. Offline Training Pipeline
 This pipeline processes raw video data to create the machine learning artifacts needed for the real-time coach.
 
+![D1](Diagrams\D1.png)
+
 1.  **Data Acquisition:** A custom video dataset is created, with videos for each yoga asana categorized by correctness (`Right`/`Wrong`) and view (`Front`/`Back`/`Side`).
 2.  **Feature Extraction (MediaPipe):** The script `1_preprocess_data.py` processes each video frame-by-frame. It uses Google's MediaPipe Pose to extract 33 normalized 3D landmarks for the detected person.
 3.  **Vectorization:** These landmarks are flattened into a 132-dimensional feature vector (`33 landmarks * 4 coordinates (x, y, z, visibility)`).
@@ -35,6 +37,8 @@ This pipeline processes raw video data to create the machine learning artifacts 
 
 ### 2. Online Real-Time Inference Pipeline
 This is the live application that the user interacts with (`3_realtime_coach.py`).
+
+![D2](Diagrams\D2.png)
 
 1.  **Live Pose Estimation:** Captures frames from the webcam and uses MediaPipe to generate a live 132-dimensional pose vector.
 2.  **Multi-Modal Evaluation:** For each frame, the system performs three parallel evaluations:
