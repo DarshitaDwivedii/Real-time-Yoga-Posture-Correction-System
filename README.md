@@ -1,6 +1,9 @@
 # Real-Time AI Yoga Pose Correction System
 
-[▶️ Watch Demo Video](Videos/Demo/Demo_video.mp4)
+<!-- [▶️ Watch Demo Video](Videos/Demo/Demo_video.mp4) -->
+<video src="Videos/Demo/Demo_video.mp4" controls autoplay loop muted width="600"></video>
+
+If the video doesn't play above, you can [download it here](Videos/Demo/Demo_video.mp4).
 
 ---
 
