@@ -26,7 +26,7 @@ The project is architected into two distinct pipelines: an **Offline Training Pi
 ### 1. Offline Training Pipeline
 This pipeline processes raw video data to create the machine learning artifacts needed for the real-time coach.
 
-![D1](References/D1.pngD1.png)
+![D1](References/D1.png)
 
 1.  **Data Acquisition:** A custom video dataset is created, with videos for each yoga asana categorized by correctness (`Right`/`Wrong`) and view (`Front`/`Back`/`Side`).
 2.  **Feature Extraction (MediaPipe):** The script `1_preprocess_data.py` processes each video frame-by-frame. It uses Google's MediaPipe Pose to extract 33 normalized 3D landmarks for the detected person.
